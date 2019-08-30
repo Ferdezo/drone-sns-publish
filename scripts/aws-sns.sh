@@ -22,6 +22,6 @@ fi
 echo "Sending message: ${PLUGIN_MESSAGE} with subject: ${PLUGIN_SUBJECT} to topic: ${PLUGIN_TOPIC_ARN}"
 
 aws sns publish \
---topic-arn ${PLUGIN_TOPIC_ARN} \
---message ${PLUGIN_MESSAGE} \
---subject ${PLUGIN_SUBJECT}
+--topic-arn "${PLUGIN_TOPIC_ARN}" \
+--message "${PLUGIN_MESSAGE}" \
+--subject "${PLUGIN_SUBJECT}"
