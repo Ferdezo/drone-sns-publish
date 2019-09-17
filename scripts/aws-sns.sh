@@ -24,4 +24,5 @@ echo "Sending message: ${PLUGIN_MESSAGE} with subject: ${PLUGIN_SUBJECT} to topi
 aws sns publish \
 --topic-arn "${PLUGIN_TOPIC_ARN}" \
 --message "${PLUGIN_MESSAGE}" \
---subject "${PLUGIN_SUBJECT}"
+--subject "${PLUGIN_SUBJECT}" \
+--region "${PLUGIN_REGION}"
